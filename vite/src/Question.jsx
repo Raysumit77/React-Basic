@@ -1,41 +1,41 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-export const Question = () => {
-  const list = [
-    { country: "india", cities: ["New Delhi", "Mumbai"] },
-    { country: "Nepal", cities: ["Kathmandu", "Bharatpur"] },
-  ];
-  const [country, setCountry] = useState("");
-  const [city, setCity] = useState("");
+// export const Question = () => {
+//   const list = [
+//     { country: "india", cities: ["New Delhi", "Mumbai"] },
+//     { country: "Nepal", cities: ["Kathmandu", "Bharatpur"] },
+//   ];
+//   const [country, setCountry] = useState("");
+//   const [city, setCity] = useState("");
 
-  return (
-    <div>
-      <select onChange={(e) => setCountry(e.target.value)}>
-        <option value="">Select a country</option>
-        {list.map((country) => {
-          return <option key={country?.country}>{country.country}</option>;
-        })}
-      </select>
-      {country && (
-        <select onChange={(e) => setCity(e.target.value)}>
-          <option value="">Select a country</option>
-          {list
-            .filter((d) => d.country === country)
-            .pop()
-            .cities.map((city) => {
-              return (
-                <option key={city} value={city}>
-                  {city}
-                </option>
-              );
-            })}
-        </select>
-      )}
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <select onChange={(e) => setCountry(e.target.value)}>
+//         <option value="">Select a country</option>
+//         {list.map((country) => {
+//           return <option key={country?.country}>{country.country}</option>;
+//         })}
+//       </select>
+//       {country && (
+//         <select onChange={(e) => setCity(e.target.value)}>
+//           <option value="">Select a country</option>
+//           {list
+//             .filter((d) => d.country === country)
+//             .pop()
+//             .cities.map((city) => {
+//               return (
+//                 <option key={city} value={city}>
+//                   {city}
+//                 </option>
+//               );
+//             })}
+//         </select>
+//       )}
+//     </div>
+//   );
+// };
 
-export default Question;
+// export default Question;
 
 //write a react component that counts the number of words used in the content sestion
 
