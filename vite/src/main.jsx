@@ -7,7 +7,7 @@ import { Register, SignUp } from "./Login";
 import { Football, MyFootball, Cricket } from "../Football";
 import { List } from "./List";
 import State from "./State";
-import Effect from "./Effect";
+import { Effect } from "./Effect";
 import { Question } from "./Question";
 
 const data = [
