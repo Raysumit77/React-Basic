@@ -6,6 +6,9 @@ import { Login, ForgetPassword, ChangePassword } from "./Login";
 import { Register, SignUp } from "./Login";
 import { Football, MyFootball, Cricket } from "../Football";
 import { List } from "./List";
+import State from "./State";
+import Effect from "./Effect";
+import { Question } from "./Question";
 
 const data = [
   { id: 1, title: "1" },
@@ -33,5 +36,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Cricket />
     <br />
     <List blogs={data} />
+    <br />
+    <State />
+    <br />
+    <Question />
+    <br />
+    <Effect />
   </React.StrictMode>
 );
