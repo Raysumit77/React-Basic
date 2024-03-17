@@ -11,7 +11,7 @@ export const Effect = () => {
   //   }, 1000);
   // });
   // //with empty dependency
-  useEffect(() => {
+  useEffect( () => {
     const getData = async () => {
       const response = await fetch("https://dummyjson.com/products/1");
       const result = await response.json();

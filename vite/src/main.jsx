@@ -9,7 +9,9 @@ import { List } from "./List";
 import State from "./State";
 import { Effect } from "./Effect";
 import { Question } from "./Question";
+import { DepEffect } from "./DepEffect";
 
+import CountdownTimer from "./countdowntimer";
 const data = [
   { id: 1, title: "1" },
   { id: 2, title: "2" },
@@ -42,5 +44,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Question />
     <br />
     <Effect />
+    <br />
+    <DepEffect />
+    <br />
+    <CountdownTimer />
   </React.StrictMode>
 );
