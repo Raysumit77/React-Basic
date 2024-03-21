@@ -16,6 +16,8 @@ import { Comp1 } from "./PropsDrill";
 import { Navbar } from "./Navbar";
 import { Profile } from "./Profile";
 import ProfileContextProvider from "./context/ProfileContext";
+import { Blogs } from "./CustomHooks/Blogs";
+// import { Users } from "./CustomHooks/Users";
 
 const data = [
   { id: 1, title: "1" },
@@ -25,6 +27,14 @@ const data = [
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <hr />
+    Day 7
+    <hr />
+    <h2>Custom Hook </h2>
+    <hr />
+    <br />
+    <Blogs />
+    {/* <br />
+    <Users /> */}
     Day 6
     <hr />
     <h2>Props Drilling</h2>
