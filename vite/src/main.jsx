@@ -1,40 +1,47 @@
+import "./main.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { ThemeContextProvider } from "./context/ThemeContext";
+import { Header } from "./styling/Header";
+import { Hero } from "./styling/Hero";
 
-import Home from "./Home";
-import { Login, ForgetPassword, ChangePassword } from "./Login";
-import { Register, SignUp } from "./Login";
-import { Football, MyFootball, Cricket } from "../Football";
-import { List } from "./List";
-import State from "./State";
-import { Effect } from "./Effect";
-import { Question } from "./Question";
-import CountdownTimer from "./Countdowntimer";
-import { DepEffect } from "./DepEffect";
-import { Weather } from "./Weather";
-import { Comp1 } from "./PropsDrill";
-import { Navbar } from "./Navbar";
-import { Profile } from "./Profile";
-import ProfileContextProvider from "./context/ProfileContext";
-import { Blogs } from "./CustomHooks/Blogs";
-// import { Users } from "./CustomHooks/Users";
+// import { Cricket, Football, MyFootball } from "../Football";
+// import CountdownTimer from "./Countdowntimer";
+// import { Blogs } from "./CustomHooks/Blogs";
+// import { DepEffect } from "./DepEffect";
+// import { Effect } from "./Effect";
+// import Home from "./Home";
+// import { List } from "./List";
+// import { ChangePassword, ForgetPassword, Login, Register, SignUp } from "./Login";
+// import { Navbar } from "./Navbar";
+// import { Profile } from "./Profile";
+// import { Comp1 } from "./PropsDrill";
+// import { Question } from "./Question";
+// import State from "./State";
+// import { Weather } from "./Weather";
+// import ProfileContextProvider from "./context/ProfileContext";
+// // import { Users } from "./CustomHooks/Users";
 
-const data = [
-  { id: 1, title: "1" },
-  { id: 2, title: "2" },
-  { id: 3, title: "3" },
-];
+// const data = [
+//   { id: 1, title: "1" },
+//   { id: 2, title: "2" },
+//   { id: 3, title: "3" },
+// ];
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <hr />
+    <ThemeContextProvider>
+      <Header />
+      <Hero />
+    </ThemeContextProvider>
+    {/* <hr />
     Day 7
     <hr />
     <h2>Custom Hook </h2>
     <hr />
     <br />
     <Blogs />
-    {/* <br />
-    <Users /> */}
+    <br />
+    <Users />
     Day 6
     <hr />
     <h2>Props Drilling</h2>
@@ -89,6 +96,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <br />
     <CountdownTimer />
     <br />
-    <Weather />
+    <Weather />  */}
   </React.StrictMode>
 );

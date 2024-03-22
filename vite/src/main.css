@@ -7,5 +7,21 @@ header,main{
     font-size: 2rem;
     font-weight: 700;
     padding: 2rem;
-    dis
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    align-items: center;
+}
+
+main {
+    align-items: flex-start;
+}
+
+h1 {
+    font-weight: 900;
+    margin: 0;
+    font-size: 6rem;
+    
 }

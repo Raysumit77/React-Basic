@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Body = () => {
-  return <div> i am testing </div>;
+  return <div>I am testing sub body </div>;
 };

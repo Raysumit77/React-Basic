@@ -9,8 +9,7 @@ export const ThemeContextProvider = ({ children }) => {
 <ThemeContext.Provider value= {{ theme, setTheme}}>
     {children}
 </ThemeContext.Provider>
-
-    );
+ );
 };
 
 export const useTheme = () => {
