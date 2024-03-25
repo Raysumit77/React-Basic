@@ -4,6 +4,9 @@ import ReactDOM from "react-dom/client";
 import { ThemeContextProvider } from "./context/ThemeContext";
 import { Header } from "./styling/Header";
 import { Hero } from "./styling/Hero";
+import { Parent } from "./callback/Parent";
+import Children from "./callback/Children";
+import { MemoHook } from "./MemoHook";
 
 // import { Cricket, Football, MyFootball } from "../Football";
 // import CountdownTimer from "./Countdowntimer";
@@ -30,8 +33,11 @@ import { Hero } from "./styling/Hero";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeContextProvider>
+      <Parent />
+      <Children />
       <Header />
       <Hero />
+      <MemoHook />
     </ThemeContextProvider>
     {/* <hr />
     Day 7
