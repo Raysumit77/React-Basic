@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./main.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -7,6 +8,7 @@ import { Hero } from "./styling/Hero";
 import { Parent } from "./callback/Parent";
 import Children from "./callback/Children";
 import { MemoHook } from "./MemoHook";
+import { Checkbox } from "./practice/Checkbox";
 
 // import { Cricket, Football, MyFootball } from "../Football";
 // import CountdownTimer from "./Countdowntimer";
@@ -33,6 +35,7 @@ import { MemoHook } from "./MemoHook";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeContextProvider>
+      <Checkbox />
       <Parent />
       <Children />
       <Header />
